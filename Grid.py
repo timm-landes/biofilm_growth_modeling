@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import math
-
+import random
 
 
 "Klasse welche einen Raum für x Bakterien darstellt und die Größe des gesamten Raums definieren kann"
