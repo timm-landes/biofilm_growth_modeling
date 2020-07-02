@@ -65,14 +65,16 @@ def spawn(x,y, bacteria):
     tempspace = grid[x][y]
     tempspace.spawn(bacteria)
     grid[x][y] = tempspace
-
-
-
-
-
-
-
-
+   #ich habemir die freiheit genommen eine initiator spawn function hinzuzufügen
+def init_spawn(bacteria):
+    x=random.uniform(0,10)
+    y=random.uniform(0,10)
+    print(x)
+    x = math.floor(x)
+    y = math.floor(y)
+    tempspace = grid[x][y]
+    tempspace.spawn(bacteria)
+    grid[x][y] = tempspace
 
 "Damit könnt ihjr kurz die fuunktion checken"
 
