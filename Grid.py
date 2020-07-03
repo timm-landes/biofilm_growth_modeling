@@ -75,7 +75,14 @@ def init_spawn(bacteria):
     tempspace = grid[x][y]
     tempspace.spawn(bacteria)
     grid[x][y] = tempspace
-
+#Die Funktion ist vielleicht ganz gut um einen Überblick zu bewahren, aber ist eigentlich nicht notwendig
+def show_grid(size):
+    '''shows the current distribution of bacteria in the grid'''
+    vis_grid=[]
+    for i in range(10):
+        for l in range (10):
+            vis_grid.append(grid[i][l].bacteria)
+    print(vis_grid)
 "Damit könnt ihjr kurz die fuunktion checken"
 
 spawn(3.5, 5.7, 3)
